@@ -1,0 +1,11 @@
+<h1><%= @student.to_s %></h1>
+
+<% if !@student.active %>
+
+<p><% student.activate_student_path %></p>
+
+<% else %>
+
+<p><% !student.deactivate_student_path %></p>
+
+<% end %>
