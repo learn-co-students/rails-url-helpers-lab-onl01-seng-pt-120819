@@ -1,11 +1,11 @@
 <h1><%= @student.to_s %></h1>
 
-<% if !@student.active %>
+<% if @student.active %>
 
-<p><% student.activate_student_path %></p>
+<p><% @student.active = false %></p>
 
 <% else %>
 
-<p><% !student.deactivate_student_path %></p>
+<p><% @student.active = true %></p>
 
 <% end %>
