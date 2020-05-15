@@ -1,0 +1,6 @@
+<% if @student.active %>
+<% @student.active = true %>
+<% else %>
+<% @student.inactive = false %>
+<% end %>
+<%= @student.active %>
